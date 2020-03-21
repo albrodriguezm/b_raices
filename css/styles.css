@@ -130,6 +130,12 @@ h4 {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+
 .contenido-header h1 {
     color: white;
     padding-bottom: 2rem;
@@ -155,30 +161,44 @@ h4 {
 .navegacion a {
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
-    /** = 18px */
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem;
+        /** = 18px */
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
 }
 
 .navegacion a:hover {
     color: #71b100;
 }
 
-.navegacion a:last-of-type {
-    margin: 0;
-}
-
 
 /* icono nosotros */
 
-.iconos-nosotros {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .icono {
-    flex-basis: calc(33.3% - 1rem);
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
 }
 
 .icono h3 {
