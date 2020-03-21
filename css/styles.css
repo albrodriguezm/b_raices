@@ -396,6 +396,16 @@ h4 {
     }
 }
 
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
 .copyright {
     margin: 0;
     color: white;
